@@ -13,10 +13,10 @@ function App() {
   return (
     <div className="font-[Inter]  w-full relative ">
       <img src={background} alt="" className="absolute w-full top-0  left-0 " />
-      <header className="fixed w-full top-0 left-0 z-[100] lg:px-[128px] pt-10">
-        {/* <Header /> */}
+      <header className="fixed w-full top-0 left-0 z-[100] lg:px-[128px] pt-5 lg:pt-10">
+        <Header />
       </header>
-      <main className="pt-[200px]">
+      <main className="pt-[150px] lg:pt-[200px]">
         <Hero />
         <Companies />
         <WhyChoose />

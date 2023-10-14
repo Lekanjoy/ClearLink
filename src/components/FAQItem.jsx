@@ -8,8 +8,11 @@ const FAQItem = ({ faq }) => {
 
   return (
     <div
-      className={`flex flex-col p-8  border-b h-[80px] 
-    ${showAnswer && "bg-[#F9FAFB]  rounded-2xl ease-in-out duration-500 h-auto"}
+      className={`flex flex-col  border-b h-[80px] lg:p-8 
+    ${
+      showAnswer &&
+      "bg-[#F9FAFB] p-4 rounded-2xl ease-in-out duration-500 h-auto"
+    }
     
     `}
     >
@@ -33,7 +36,7 @@ const FAQItem = ({ faq }) => {
       </div>
 
       <p
-        className={`text-[#475467] text-sm leading-7 self-stretch opacity-0
+        className={`text-[#475467] text-xs leading-5 self-stretch pointer-events-none opacity-0 mt-3 lg:leading-7 lg:text-sm
         ${showAnswer && "opacity-100 ease-in-out duration-[1000ms]"}
         `}
       >

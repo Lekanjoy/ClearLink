@@ -61,7 +61,7 @@ const FAQs = () => {
         </p>
       </div>
 
-      <div className="flex flex-col w-full lg:gap-y-4 ">
+      <div className="flex flex-col w-full gap-y-4 mt-10 lg:mt-0">
         {FAQData.map(faq => {
             return <FAQItem key={faq.id} faq={faq}/>
         })}
