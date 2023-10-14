@@ -1,7 +1,7 @@
 import heroImg from "../assets/heroImg.png";
 import avatars from "../assets/Avatars.svg";
 import star from "../assets/Star.svg";
-import AI from '../assets/AI.svg'
+import AI from "../assets/AI.svg";
 
 const Hero = () => {
   return (
@@ -15,12 +15,14 @@ const Hero = () => {
           crystal-clear video conferencing meets unparalleled simplicity.
         </p>
         <div className="flex  items-center gap-x-3 mb-6 lg:gap-x-5 lg:mb-12">
-          <button className="rounded-full text-sm bg-[#175CD3] border border-[#98A2B3] font-semibold text-white py-2 px-4 lg:py-4 lg:px-7">
+          <button className="rounded-full text-xs  bg-[#175CD3] border border-[#98A2B3] font-semibold text-white py-2 px-4 lg:text-sm lg:py-4 lg:px-7">
             Start your free trial
           </button>
           <div className="flex items-center gap-x-1">
             <img src={AI} alt="AI icon" />
-            <p className="text-[#175CD3] text-sm">Discover AI assistant</p>
+            <p className="text-[#175CD3] text-xs lg:text-sm">
+              Discover AI assistant
+            </p>
           </div>
         </div>
         <div className="flex gap-x-4 items-center">
