@@ -1,6 +1,7 @@
 import { useState } from "react";
 import logo from "../assets/clearLinkLogo.svg";
 import hamburger from '../assets/icon-hamburger.svg'
+import closeIcon from '../assets/icon-close.svg'
 
 const Header = () => {
   const headerData = [
@@ -32,8 +33,15 @@ const Header = () => {
       <div>
         <img src={logo} alt="ClearLink Logo" />
       </div>
-      <div onClick={() => setShowNav(!showNav)} className="block cursor-pointer lg:hidden">
-        <img src={hamburger} alt="Hamburger Menu" />
+      <div
+        onClick={() => setShowNav(!showNav)}
+        className="block cursor-pointer lg:hidden"
+      >
+        {showNav ? (
+          <img src={closeIcon} alt="Close Icon Menu" />
+        ) : (
+          <img src={hamburger} alt="Hamburger Menu" />
+        )}
       </div>
       <nav className="hidden flex-col absolute top-[84px] px-5 py-10 left-0  gap-y-8 bg-[#F2F4F7] w-full lg:p-0 lg:relative lg:gap-x-6 lg:flex-row lg:top-0 lg:bg-none lg:w-auto lg:flex">
         {headerData.map((item) => {
